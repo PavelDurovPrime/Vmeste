@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="uk" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рекламна агенція «Vmeste» Одеса — Власне виробництво реклами та поліграфії</title>
+    <meta name="description" content="Рекламна агенція повного циклу в Одесі. Поліграфія, сувеніри, зовнішня реклама, брендування авто, дизайн. 15 років досвіду, 180+ послуг.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Fonts: Inter & Manrope for maximum readability and clean professional look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Manrope', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            DEFAULT: '#E61E2B',
+                            hover: '#CC1622',
+                            light: '#FEF2F2',
+                            50: '#FFF1F2',
+                        },
+                        slate: {
+                            850: '#151F32',
+                            900: '#0F172A',
+                            950: '#0B0F19',
+                        }
+                    },
+                    boxShadow: {
+                        'card': '0 2px 10px rgba(0, 0, 0, 0.04), 0 10px 30px rgba(0, 0, 0, 0.04)',
+                        'card-hover': '0 12px 30px rgba(0, 0, 0, 0.09), 0 2px 8px rgba(0, 0, 0, 0.04)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1E293B;
+            background-color: #F8FAFC;
+        }
+        h1, h2, h3, h4, h5, h6, .font-heading {
+            font-family: 'Manrope', sans-serif;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="selection:bg-brand selection:text-white">
+
+    <!-- 1. ВЕРХНІЙ ІНФО-РЯДОК (Контакти та графік) -->
+    <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-4 flex-wrap">
+                <span class="flex items-center gap-1.5 text-slate-200">
+                    <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand"></i>
+                    м. Одеса, Україна
+                </span>
+                <span class="text-slate-600 hidden sm:inline">•</span>
+                <span class="flex items-center gap-1.5 text-slate-300">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block animate-pulse"></span>
+                    Пн–Пт: 10:00 – 16:00
+                </span>
+            </div>
+            <div class="flex items-center gap-5 flex-wrap">
+                <a href="https://t.me/Vmeste_ra" target="_blank" class="hover:text-white transition flex items-center gap-1">
+                    <i data-lucide="send" class="w-3.5 h-3.5 text-sky-400"></i> Telegram: @Vmeste_ra
+                </a>
+                <a href="viber://chat?number=%2B380634531234" class="hover:text-white transition flex items-center gap-1">
+                    <i data-lucide="message-circle" class="w-3.5 h-3.5 text-purple-400"></i> Viber
+                </a>
+                <a href="https://kabinet.v.od.ua" target="_blank" class="text-amber-400 hover:text-amber-300 font-semibold flex items-center gap-1 transition">
+                    <i data-lucide="user-check" class="w-3.5 h-3.5"></i> Кабінет клієнта
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. ГОЛОВНА НАВІГАЦІЯ (ШАПКА) -->
+    <header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Логотип -->
+            <a href="#" class="flex items-center gap-3 group">
+                <img src="img/logo.png" alt="РА Vmeste" class="h-11 w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div style="display:none;" class="text-2xl font-black font-heading text-slate-900 tracking-tight">VMESTE</div>
+                <div class="hidden sm:block border-l border-slate-300 pl-3 leading-tight">
+                    <div class="text-[11px] font-bold text-slate-900 uppercase tracking-wider">Рекламна Агенція</div>
+                    <div class="text-[10px] text-slate-500">Виробництво з 2011 року</div>
+                </div>
+            </a>
+
+            <!-- Меню для комп'ютера -->
+            <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+                <a href="#services" class="hover:text-brand transition py-2">Каталог послуг</a>
+                <a href="#about" class="hover:text-brand transition py-2">Про нас</a>
+                <a href="#production" class="hover:text-brand transition py-2">Виробництво</a>
+                <a href="#calculator" class="hover:text-brand transition py-2">Калькулятор</a>
+                <a href="#portfolio" class="hover:text-brand transition py-2">Наші роботи</a>
+                <a href="#contacts" class="hover:text-brand transition py-2">Контакти</a>
+            </nav>
+
+            <!-- Телефони та кнопка дзвінка -->
+            <div class="flex items-center gap-4">
+                <div class="hidden md:flex flex-col text-right">
+                    <a href="tel:+380487874282" class="text-sm font-bold text-slate-900 hover:text-brand transition">
+                        (048) 787-42-82
+                    </a>
+                    <span class="text-xs text-slate-500">Багатоканальний в Одесі</span>
+                </div>
+                <a href="#calculator" class="bg-brand hover:bg-brand-hover text-white text-sm font-bold px-5 py-2.5 rounded-xl transition shadow-md shadow-brand/20 flex items-center gap-2">
+                    <i data-lucide="calculator" class="w-4 h-4"></i>
+                    <span>Розрахувати</span>
+                </a>
+                <!-- Мобільна кнопка бургер -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-slate-700 hover:text-brand focus:outline-none" aria-label="Меню">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Мобільне меню (випадаюче) -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-5 space-y-4 shadow-xl">
+            <a href="#services" class="block text-base font-semibold text-slate-800 hover:text-brand" onclick="toggleMobileMenu()">Каталог послуг (180+)</a>
+            <a href="#about" class="block text-base font-semibold text-slate-800 hover:text-brand" onclick="toggleMobileMenu()">Про агенцію</a>
+            <a href="#production" class="block text-base font-semibold text-slate-800 hover:text-brand" onclick="toggleMobileMenu()">Власне виробництво</a>
+            <a href="#calculator" class="block text-base font-semibold text-slate-800 hover:text-brand" onclick="toggleMobileMenu()">Калькулятор замовлення</a>
+            <a href="#portfolio" class="block text-base font-semibold text-slate-800 hover:text-brand" onclick="toggleMobileMenu()">Наші роботи</a>
+            <a href="#contacts" class="block text-base font-semibold text-slate-800 hover:text-brand" onclick="toggleMobileMenu()">Контакти та адреса</a>
+            <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">
+                <a href="tel:+380487874282" class="font-bold text-slate-900 text-sm flex items-center gap-2">
+                    <i data-lucide="phone" class="w-4 h-4 text-brand"></i> (048) 787-42-82
+                </a>
+                <a href="https://t.me/Vmeste_ra" class="font-semibold text-sky-600 text-sm flex items-center gap-2">
+                    <i data-lucide="send" class="w-4 h-4"></i> Написати в Telegram
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. ГОЛОВНИЙ ЕКРАН (HERO) — Зрозумілий, масивний, викликає довіру -->
+    <section class="bg-white border-b border-slate-200 pt-12 pb-16 lg:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Текстова частина -->
+                <div class="lg:col-span-7">
+                    <!-- Бейдж -->
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand/20 text-brand text-xs font-bold mb-6">
+                        <span class="w-2 h-2 rounded-full bg-brand"></span>
+                        Власна виробнича база в Одесі з 2011 року
+                    </div>
+
+                    <!-- Головний зрозумілий заголовок -->
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading text-slate-900 leading-[1.15] mb-6">
+                        Рекламна агенція повного циклу в Одесі — <span class="text-brand">від візитки до вивіски</span>
+                    </h1>
+
+                    <!-- Підзаголовок -->
+                    <p class="text-base sm:text-lg text-slate-600 leading-relaxed mb-8 max-w-2xl">
+                        Виготовляємо понад <strong>180 видів рекламної продукції</strong> без посередників: оперативна поліграфія, брендування одягу, сувеніри, світлові вивіски та реклама на авто. Швидкий прорахунок за 15 хвилин.
+                    </p>
+
+                    <!-- Кнопки дій -->
+                    <div class="flex flex-col sm:flex-row gap-3.5 mb-10">
+                        <a href="#services" class="bg-brand hover:bg-brand-hover text-white text-center font-bold px-7 py-4 rounded-xl transition shadow-lg shadow-brand/25 flex items-center justify-center gap-2 text-base">
+                            <i data-lucide="layers" class="w-5 h-5"></i>
+                            Відкрити каталог (180+ послуг)
+                        </a>
+                        <a href="#calculator" class="bg-slate-100 hover:bg-slate-200 text-slate-800 text-center font-bold px-7 py-4 rounded-xl transition border border-slate-300 flex items-center justify-center gap-2 text-base">
+                            <i data-lucide="calculator" class="w-5 h-5 text-slate-600"></i>
+                            Швидкий розрахунок
+                        </a>
+                    </div>
+
+                    <!-- 4 Ключові цифри довіри -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-200">
+                        <div>
+                            <div class="text-2xl lg:text-3xl font-black font-heading text-slate-900">15 років</div>
+                            <div class="text-xs text-slate-500 font-medium">досвіду в Одесі</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl lg:text-3xl font-black font-heading text-slate-900">180+</div>
+                            <div class="text-xs text-slate-500 font-medium">видів послуг</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl lg:text-3xl font-black font-heading text-brand">100%</div>
+                            <div class="text-xs text-slate-500 font-medium">власний цех</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl lg:text-3xl font-black font-heading text-slate-900">від 24 год</div>
+                            <div class="text-xs text-slate-500 font-medium">термін друку</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Візуальна частина: Реальні фото цеху та продукції -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-100">
+                        <img src="img/portfolio/slider1.jpg" alt="Виробництво РА Вместе" class="w-full h-80 sm:h-96 object-cover" onerror="this.src='img/portfolio/vizitki.png';">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                        
+                        <!-- Плаваючий бейдж кабінету -->
+                        <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-xl border border-slate-200 shadow-lg flex items-center justify-between gap-3">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-brand-50 text-brand flex items-center justify-center font-bold">
+                                    <i data-lucide="shield-check" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-bold text-slate-900">Кабінет клієнта kabinet.v.od.ua</div>
+                                    <div class="text-[11px] text-slate-500">Зберігаємо всі макети та історію замовлень</div>
+                                </div>
+                            </div>
+                            <a href="https://kabinet.v.od.ua" target="_blank" class="px-3 py-1.5 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-xs font-bold whitespace-nowrap transition">
+                                Вхід
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. ШВИДКИЙ ПОШУК ТА ГОЛОВНІ НАПРЯМКИ -->
+    <section id="services" class="py-16 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Заголовок секції -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+                <div>
+                    <span class="text-brand font-bold text-xs uppercase tracking-wider">Каталог продукції</span>
+                    <h2 class="text-3xl lg:text-4xl font-extrabold font-heading text-slate-900 mt-1">
+                        Оберіть категорію або знайдіть потрібне
+                    </h2>
+                    <p class="text-slate-600 text-sm mt-2">
+                        Швидкий вибір серед 180+ найменувань. Все виготовляється на нашому виробництві в Одесі.
+                    </p>
+                </div>
+
+                <!-- Поле живого пошуку -->
+                <div class="w-full md:w-80 relative">
+                    <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+                    <input type="text" id="liveSearchInput" placeholder="Пошук (напр. візитки, чашки, вивіска)..." 
+                           class="w-full bg-white border border-slate-300 rounded-xl pl-10 pr-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20 transition shadow-sm">
+                </div>
+            </div>
+
+            <!-- Вкладки категорій (Зрозумілі кнопки з іконками) -->
+            <div class="flex gap-2 overflow-x-auto hide-scrollbar pb-3 mb-8" id="categoryFilterContainer">
+                <button onclick="filterCategory('all')" class="cat-btn active px-5 py-2.5 rounded-xl text-sm font-bold bg-brand text-white shadow-sm whitespace-nowrap transition">
+                    Всі послуги (180+)
+                </button>
+                <button onclick="filterCategory('polygraphy')" class="cat-btn px-5 py-2.5 rounded-xl text-sm font-bold bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 whitespace-nowrap transition">
+                    🖨️ Поліграфія
+                </button>
+                <button onclick="filterCategory('souvenirs')" class="cat-btn px-5 py-2.5 rounded-xl text-sm font-bold bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 whitespace-nowrap transition">
+                    🎁 Сувеніри та Мерч
+                </button>
+                <button onclick="filterCategory('outdoor')" class="cat-btn px-5 py-2.5 rounded-xl text-sm font-bold bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 whitespace-nowrap transition">
+                    💡 Зовнішня реклама
+                </button>
+                <button onclick="filterCategory('transport')" class="cat-btn px-5 py-2.5 rounded-xl text-sm font-bold bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 whitespace-nowrap transition">
+                    🚗 Брендування авто
+                </button>
+                <button onclick="filterCategory('design')" class="cat-btn px-5 py-2.5 rounded-xl text-sm font-bold bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 whitespace-nowrap transition">
+                    🎨 Дизайн та макети
+                </button>
+            </div>
+
+            <!-- СІТКА КАРТОК З РЕАЛЬНИМИ ФОТОГРАФІЯМИ -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="productsGrid">
+
+                <!-- 1. Візитки -->
+                <div class="product-card bg-white rounded-2xl border border-slate-200 p-5 shadow-card hover:shadow-card-hover transition-all duration-200 flex flex-col justify-between" data-category="polygraphy" data-title="друк візиток візитки soft-touch vip">
+                    <div>
+                        <div class="h-44 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center p-3 mb-4 overflow-hidden">
+                            <img src="img/portfolio/vizitki.png" alt="Друк візиток" class="h-full object-contain hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-brand bg-brand-50 px-2 py-0.5 rounded">Поліграфія</span>
+                        <h3 class="text-lg font-extrabold text-slate-900 mt-2">Друк візиток</h3>
+                        <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">Цифровий та офсетний друк, шовкодрук, ламінація Soft-Touch, тиснення фольгою.</p>
+                        <div class="mt-3 flex items-center justify-between text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg">
+                            <span>⏱️ 1–2 дні</span>
+                            <span>📦 від 100 шт</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-400 block font-medium">Ціна</span>
+                            <span class="text-base font-extrabold text-slate-900">від 450 ₴ <span class="text-xs font-normal text-slate-500">/ 1000 шт</span></span>
+                        </div>
+                        <button onclick="openQuickOrder('Друк візиток')" class="bg-brand text-white text-xs font-bold px-3.5 py-2 rounded-lg hover:bg-brand-hover transition">Замовити</button>
+                    </div>
+                </div>
+
+                <!-- 2. Листівки та флаєри -->
+                <div class="product-card bg-white rounded-2xl border border-slate-200 p-5 shadow-card hover:shadow-card-hover transition-all duration-200 flex flex-col justify-between" data-category="polygraphy" data-title="листівки флаєри флаера друк реклама">
+                    <div>
+                        <div class="h-44 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center p-3 mb-4 overflow-hidden">
+                            <img src="img/portfolio/listovki.png" alt="Листівки та флаєри" class="h-full object-contain hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-brand bg-brand-50 px-2 py-0.5 rounded">Поліграфія</span>
+                        <h3 class="text-lg font-extrabold text-slate-900 mt-2">Листівки та Флаєри</h3>
+                        <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">Формати А6, А5, А4, Єврофлаєри. Крейдований папір різної щільності.</p>
+                        <div class="mt-3 flex items-center justify-between text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg">
+                            <span>⏱️ 1–3 дні</span>
+                            <span>📦 від 500 шт</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-400 block font-medium">Ціна</span>
+                            <span class="text-base font-extrabold text-slate-900">від 750 ₴ <span class="text-xs font-normal text-slate-500">/ 1000 шт</span></span>
+                        </div>
+                        <button onclick="openQuickOrder('Листівки та Флаєри')" class="bg-brand text-white text-xs font-bold px-3.5 py-2 rounded-lg hover:bg-brand-hover transition">Замовити</button>
+                    </div>
+                </div>
+
+                <!-- 3. Буклети та каталоги -->
+                <div class="product-card bg-white rounded-2xl border border-slate-200 p-5 shadow-card hover:shadow-card-hover transition-all duration-200 flex flex-col justify-between" data-category="polygraphy" data-title="буклети каталоги брошури меню">
+                    <div>
+                        <div class="h-44 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center p-3 mb-4 overflow-hidden">
+                            <img src="img/portfolio/bukleti.png" alt="Буклети" class="h-full object-contain hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-brand bg-brand-50 px-2 py-0.5 rounded">Поліграфія</span>
+                        <h3 class="text-lg font-extrabold text-slate-900 mt-2">Буклети та Каталоги</h3>
+                        <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">Євробуклети, меню для ресторанів, презентаційні каталоги на скобі або пружині.</p>
+                        <div class="mt-3 flex items-center justify-between text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg">
+                            <span>⏱️ 2–4 дні</span>
+                            <span>📦 від 100 шт</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-400 block font-medium">Ціна</span>
+                            <span class="text-base font-extrabold text-slate-900">від 1 200 ₴ <span class="text-xs font-normal text-slate-500">/ 500 шт</span></span>
+                        </div>
+                        <button onclick="openQuickOrder('Буклети та Каталоги')" class="bg-brand text-white text-xs font-bold px-3.5 py-2 rounded-lg hover:bg-brand-hover transition">Замовити</button>
+                    </div>
+                </div>
+
+                <!-- 4. Наклейки та стікери -->
+                <div class="product-card bg-white rounded-2xl border border-slate-200 p-5 shadow-card hover:shadow-card-hover transition-all duration-200 flex flex-col justify-between" data-category="polygraphy" data-title="наклейки стікери етикетки стікерпаки">
+                    <div>
+                        <div class="h-44 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center p-3 mb-4 overflow-hidden">
+                            <img src="img/portfolio/nakleyki.png" alt="Наклейки" class="h-full object-contain hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-brand bg-brand-50 px-2 py-0.5 rounded">Поліграфія</span>
+                        <h3 class="text-lg font-extrabold text-slate-900 mt-2">Наклейки та Етикетки</h3>
+                        <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">Контурна плотерна порізка, вологостійкі плівки, об'ємні наклейки з полімерною смолою.</p>
+                        <div class="mt-3 flex items-center justify-between text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg">
+                            <span>⏱️ 1–2 дні</span>
+                            <span>📦 від 50 шт</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-400 block font-medium">Ціна</span>
+                            <span class="text-base font-extrabold text-slate-900">від 300 ₴ <span class="text-xs font-normal text-slate-500">/ 100 шт</span></span>
+                        </div>
+                        <button onclick="openQuickOrder('Наклейки та Етикетки')" class="bg-brand text-white text-xs font-bold px-3.5 py-2 rounded-lg hover:bg-brand-hover transition">Замовити</button>
+                    </div>
+                </div>
+
+                <!-- 5. Футболки та мерч -->
+                <div class="product-card bg-white rounded-2xl border border-slate-200 p-5 shadow-card hover:shadow-card-hover transition-all duration-200 flex flex-col justify-between" data-category="souvenirs" data-title="футболки мерч худі одяг друк на тканині">
+                    <div>
+                        <div class="h-44 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center p-3 mb-4 overflow-hidden">
+                            <img src="img/portfolio/futbolki.png" alt="Брендування одягу" class="h-full object-contain hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-purple-600 bg-purple-50 px-2 py-0.5 rounded">Сувеніри & Мерч</span>
+                        <h3 class="text-lg font-extrabold text-slate-900 mt-2">Футболки, Худі, Мерч</h3>
+                        <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">Шовкотрафарет, DTF-друк, вишивка та термоперенос на якісному фірмовому текстилі.</p>
+                        <div class="mt-3 flex items-center justify-between text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg">
+                            <span>⏱️ 2–5 днів</span>
+                            <span>📦 від 5 шт</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-400 block font-medium">Ціна</span>
+                            <span class="text-base font-extrabold text-slate-900">від 280 ₴ <span class="text-xs font-normal text-slate-500">/ шт з друком</span></span>
+                        </div>
+                        <button onclick="openQuickOrder('Брендування футболок та одягу')" class="bg-brand text-white text-xs font-bold px-3.5 py-2 rounded-lg hover:bg-brand-hover transition">Замовити</button>
+                    </div>
+                </div>
+
+                <!-- 6. Чашки та посуд -->
+                <div class="product-card bg-white rounded-2xl border border-slate-200 p-5 shadow-card hover:shadow-card-hover transition-all duration-200 flex flex-col justify-between" data-category="souvenirs" data-title="чашки кружки термоси посуд друк логотипу">
+                    <div>
+                        <div class="h-44 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center p-3 mb-4 overflow-hidden">
+                            <img src="img/portfolio/chashki.png" alt="Чашки з логотипом" class="h-full object-contain hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-purple-600 bg-purple-50 px-2 py-0.5 rounded">Сувеніри & Мерч</span>
+                        <h3 class="text-lg font-extrabold text-slate-900 mt-2">Чашки та Термокружки</h3>
+                        <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">Сублімаційний друк, деколь, тамподрук. Білі, кольорові, хамелеони, софт-тач.</p>
+                        <div class="mt-3 flex items-center justify-between text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg">
+                            <span>⏱️ 1–3 дні</span>
+                            <span>📦 від 10 шт</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-400 block font-medium">Ціна</span>
+                            <span class="text-base font-extrabold text-slate-900">від 120 ₴ <span class="text-xs font-normal text-slate-500">/ шт з нанесенням</span></span>
+                        </div>
+                        <button onclick="openQuickOrder('Чашки з логотипом')" class="bg-brand text-white text-xs font-bold px-3.5 py-2 rounded-lg hover:bg-brand-hover transition">Замовити</button>
+                    </div>
+                </div>
+
+                <!-- 7. Кепки та бейсболки -->
+                <div class="product-card bg-white rounded-2xl border border-slate-200 p-5 shadow-card hover:shadow-card-hover transition-all duration-200 flex flex-col justify-between" data-category="souvenirs" data-title="кепки бейсболки шапки вишивка">
+                    <div>
+                        <div class="h-44 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center p-3 mb-4 overflow-hidden">
+                            <img src="img/portfolio/kepki.png" alt="Кепки з логотипом" class="h-full object-contain hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-purple-600 bg-purple-50 px-2 py-0.5 rounded">Сувеніри & Мерч</span>
+                        <h3 class="text-lg font-extrabold text-slate-900 mt-2">Кепки та Бейсболки</h3>
+                        <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">Якісна об'ємна машинна вишивка (3D) та термоперенос. Понад 20 кольорів в наявності.</p>
+                        <div class="mt-3 flex items-center justify-between text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg">
+                            <span>⏱️ 3–5 днів</span>
+                            <span>📦 від 10 шт</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-400 block font-medium">Ціна</span>
+                            <span class="text-base font-extrabold text-slate-900">від 190 ₴ <span class="text-xs font-normal text-slate-500">/ шт з вишивкою</span></span>
+                        </div>
+                        <button onclick="openQuickOrder('Кепки з логотипом')" class="bg-brand text-white text-xs font-bold px-3.5 py-2 rounded-lg hover:bg-brand-hover transition">Замовити</button>
+                    </div>
+                </div>
+
+                <!-- 8. Ручки та канцелярія -->
+                <div class="product-card bg-white rounded-2xl border border-slate-200 p-5 shadow-card hover:shadow-card-hover transition-all duration-200 flex flex-col justify-between" data-category="souvenirs" data-title="ручки канцелярія блокноти олівці павербанки">
+                    <div>
+                        <div class="h-44 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center p-3 mb-4 overflow-hidden">
+                            <img src="img/portfolio/ruchki.png" alt="Ручки з логотипом" class="h-full object-contain hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-purple-600 bg-purple-50 px-2 py-0.5 rounded">Сувеніри & Мерч</span>
+                        <h3 class="text-lg font-extrabold text-slate-900 mt-2">Ручки та Блокноти</h3>
+                        <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">Пластикові та металеві ручки, УФ-друк або лазерне гравіювання, брендовані блокноти.</p>
+                        <div class="mt-3 flex items-center justify-between text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg">
+                            <span>⏱️ 2–3 дні</span>
+                            <span>📦 від 50 шт</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-400 block font-medium">Ціна</span>
+                            <span class="text-base font-extrabold text-slate-900">від 18 ₴ <span class="text-xs font-normal text-slate-500">/ шт з друком</span></span>
+                        </div>
+                        <button onclick="openQuickOrder('Ручки та Блокноти')" class="bg-brand text-white text-xs font-bold px-3.5 py-2 rounded-lg hover:bg-brand-hover transition">Замовити</button>
+                    </div>
+                </div>
+
+                <!-- 9. Світлові вивіски та лайтбокси -->
+                <div class="product-card bg-white rounded-2xl border border-slate-200 p-5 shadow-card hover:shadow-card-hover transition-all duration-200 flex flex-col justify-between" data-category="outdoor" data-title="вивіски лайтбокси світлова реклама неон фасад">
+                    <div>
+                        <div class="h-44 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center p-3 mb-4 overflow-hidden">
+                            <img src="img/portfolio/lightbox.png" alt="Світлові вивіски" class="h-full object-contain hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2 py-0.5 rounded">Зовнішня реклама</span>
+                        <h3 class="text-lg font-extrabold text-slate-900 mt-2">Світлові Вивіски та Лайтбокси</h3>
+                        <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">Фігурні та прямокутні світлові короби, композит, світлодіоди з гарантією 3 роки, монтаж.</p>
+                        <div class="mt-3 flex items-center justify-between text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg">
+                            <span>⏱️ 5–8 днів</span>
+                            <span>📦 від 1 шт</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-400 block font-medium">Ціна</span>
+                            <span class="text-base font-extrabold text-slate-900">від 2 800 ₴ <span class="text-xs font-normal text-slate-500">/ м²</span></span>
+                        </div>
+                        <button onclick="openQuickOrder('Світлові вивіски та Лайтбокси')" class="bg-brand text-white text-xs font-bold px-3.5 py-2 rounded-lg hover:bg-brand-hover transition">Замовити</button>
+                    </div>
+                </div>
+
+                <!-- 10. Об'ємні літери та неон -->
+                <div class="product-card bg-white rounded-2xl border border-slate-200 p-5 shadow-card hover:shadow-card-hover transition-all duration-200 flex flex-col justify-between" data-category="outdoor" data-title="об'ємні літери неон гнучкий неон вивіска літери">
+                    <div>
+                        <div class="h-44 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center p-3 mb-4 overflow-hidden">
+                            <img src="img/portfolio/letters.png" alt="Об'ємні літери" class="h-full object-contain hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2 py-0.5 rounded">Зовнішня реклама</span>
+                        <h3 class="text-lg font-extrabold text-slate-900 mt-2">Об'ємні Літери та Неон</h3>
+                        <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">Акрилові світлові літери, контражурне підсвічування, неонові написи для інтер'єру та фасадів.</p>
+                        <div class="mt-3 flex items-center justify-between text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg">
+                            <span>⏱️ 5–7 днів</span>
+                            <span>📦 від 1 шт</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-400 block font-medium">Ціна</span>
+                            <span class="text-base font-extrabold text-slate-900">від 45 ₴ <span class="text-xs font-normal text-slate-500">/ 1 см висоти</span></span>
+                        </div>
+                        <button onclick="openQuickOrder('Обємні літери та Неон')" class="bg-brand text-white text-xs font-bold px-3.5 py-2 rounded-lg hover:bg-brand-hover transition">Замовити</button>
+                    </div>
+                </div>
+
+                <!-- 11. Брендування авто -->
+                <div class="product-card bg-white rounded-2xl border border-slate-200 p-5 shadow-card hover:shadow-card-hover transition-all duration-200 flex flex-col justify-between" data-category="transport" data-title="брендування авто машини транспорт обклейка плівкою oracal">
+                    <div>
+                        <div class="h-44 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center p-3 mb-4 overflow-hidden">
+                            <img src="img/portfolio/auto.png" alt="Брендування авто" class="h-full object-contain hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">Реклама на транспорті</span>
+                        <h3 class="text-lg font-extrabold text-slate-900 mt-2">Брендування Автомобілів</h3>
+                        <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">Обклеювання легкових авто, бусів, вантажівок та спецтехніки плівками Oracal з ламінацією.</p>
+                        <div class="mt-3 flex items-center justify-between text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg">
+                            <span>⏱️ 1–3 дні</span>
+                            <span>📦 від 1 авто</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-400 block font-medium">Ціна</span>
+                            <span class="text-base font-extrabold text-slate-900">від 1 800 ₴ <span class="text-xs font-normal text-slate-500">/ обклеювання</span></span>
+                        </div>
+                        <button onclick="openQuickOrder('Брендування авто')" class="bg-brand text-white text-xs font-bold px-3.5 py-2 rounded-lg hover:bg-brand-hover transition">Замовити</button>
+                    </div>
+                </div>
+
+                <!-- 12. Дизайн та айдентика -->
+                <div class="product-card bg-white rounded-2xl border border-slate-200 p-5 shadow-card hover:shadow-card-hover transition-all duration-200 flex flex-col justify-between" data-category="design" data-title="дизайн логотип фірмовий стиль макети підготовка до друку">
+                    <div>
+                        <div class="h-44 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center p-3 mb-4 overflow-hidden">
+                            <img src="img/portfolio/logo_design.png" alt="Дизайн та макетування" class="h-full object-contain hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-2 py-0.5 rounded">Дизайн & Верстка</span>
+                        <h3 class="text-lg font-extrabold text-slate-900 mt-2">Дизайн та Макети</h3>
+                        <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">Розробка логотипів, брендбуків, макетування поліграфії та 3D-візуалізація вивісок на будівлі.</p>
+                        <div class="mt-3 flex items-center justify-between text-xs text-slate-600 bg-slate-50 p-2.5 rounded-lg">
+                            <span>⏱️ 1–3 дні</span>
+                            <span>📦 2-3 варіанти</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-slate-400 block font-medium">Ціна</span>
+                            <span class="text-base font-extrabold text-slate-900">від 400 ₴ <span class="text-xs font-normal text-slate-500">/ макет</span></span>
+                        </div>
+                        <button onclick="openQuickOrder('Дизайн та макети')" class="bg-brand text-white text-xs font-bold px-3.5 py-2 rounded-lg hover:bg-brand-hover transition">Замовити</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Стан якщо нічого не знайдено -->
+            <div id="noResultsBlock" class="hidden text-center py-12 bg-white rounded-2xl border border-slate-200 mt-6">
+                <i data-lucide="search-x" class="w-12 h-12 text-slate-300 mx-auto mb-3"></i>
+                <h3 class="text-lg font-bold text-slate-800">Послугу не знайдено</h3>
+                <p class="text-sm text-slate-500 mt-1">Але ми виготовляємо понад 180+ позицій! Зателефонуйте нам або напишіть у месенджер.</p>
+                <a href="https://t.me/Vmeste_ra" class="inline-flex items-center gap-2 mt-4 px-5 py-2.5 bg-sky-500 hover:bg-sky-600 text-white rounded-xl text-xs font-bold transition">
+                    <i data-lucide="send" class="w-4 h-4"></i> Запитати менеджера в Telegram
+                </a>
+            </div>
+
+            <!-- Блок повного списку напрямків (Як на v.od.ua) -->
+            <div class="mt-12 bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+                <h3 class="text-xl font-bold font-heading text-slate-900 mb-4 flex items-center gap-2">
+                    <i data-lucide="check-circle-2" class="w-5 h-5 text-brand"></i>
+                    Всі інші види реклами з одних рук в Одесі:
+                </h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 text-xs text-slate-600">
+                    <div class="p-2.5 bg-slate-50 rounded-lg">📄 Бланки, конверти, папки</div>
+                    <div class="p-2.5 bg-slate-50 rounded-lg">🏷️ Бірки, цінники, ярлики</div>
+                    <div class="p-2.5 bg-slate-50 rounded-lg">🎟️ Квитки, абонементи, меню</div>
+                    <div class="p-2.5 bg-slate-50 rounded-lg">☕ Кофесети та плейсмати</div>
+                    <div class="p-2.5 bg-slate-50 rounded-lg">🛍️ Паперові та крафт пакети</div>
+                    <div class="p-2.5 bg-slate-50 rounded-lg">💳 Пластикові картки</div>
+                    <div class="p-2.5 bg-slate-50 rounded-lg">🎈 Повітряні кульки з друком</div>
+                    <div class="p-2.5 bg-slate-50 rounded-lg">🪪 Бейджі та номерки</div>
+                    <div class="p-2.5 bg-slate-50 rounded-lg">☂️ Парасолі та дощовики</div>
+                    <div class="p-2.5 bg-slate-50 rounded-lg">🔋 Павербанки та флешки</div>
+                    <div class="p-2.5 bg-slate-50 rounded-lg">🚩 Прапори та вимпели</div>
+                    <div class="p-2.5 bg-slate-50 rounded-lg">🖼️ Друк на холсті та картини</div>
+                    <div class="p-2.5 bg-slate-50 rounded-lg">🏢 Оформлення вітрин магазинів</div>
+                    <div class="p-2.5 bg-slate-50 rounded-lg">🪧 Ролапи та штендери</div>
+                    <div class="p-2.5 bg-slate-50 rounded-lg">📐 Фасадні таблички та вказівники</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. ЧОМУ ОБИРАЮТЬ РА «VMESTE» (ВЛАСНЕ ВИРОБНИЦТВО) -->
+    <section id="production" class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-brand font-bold text-xs uppercase tracking-wider">Без посередників</span>
+                <h2 class="text-3xl font-extrabold font-heading text-slate-900 mt-1">
+                    Наш парк обладнання в Одесі
+                </h2>
+                <p class="text-slate-600 text-sm mt-2">
+                    Ми не перерозміщуємо ваші замовлення в інших місцях. Вся продукція друкується, ріжеться та збирається у наших цехах.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- 1. УФ-друк -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-slate-300 transition">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand flex items-center justify-center mb-4">
+                        <i data-lucide="sun" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">УФ-друк прямого нанесення</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Прямий стійкий друк на пластику, дереві, склі, металі, акрилі та щоденниках. Чіткість до 1440 dpi, не вигорає на сонці.
+                    </p>
+                </div>
+
+                <!-- 2. Лазерний цех -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-slate-300 transition">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand flex items-center justify-center mb-4">
+                        <i data-lucide="scissors" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Лазерна порізка та гравіювання</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Точний розкрій акрилу, фанери, ПЕТ, шкіри. Виготовлення номерків, підставок для ресторанів, трафаретів та нагород.
+                    </p>
+                </div>
+
+                <!-- 3. Шовкотрафарет -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-slate-300 transition">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand flex items-center justify-center mb-4">
+                        <i data-lucide="printer" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Шовкотрафаретний друк</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Економічний друк великих тиражів на тканині, пакетах, картоні за точними кольорами Pantone. Вибірковий УФ-лак.
+                    </p>
+                </div>
+
+                <!-- 4. Складальний цех -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-slate-300 transition">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand flex items-center justify-center mb-4">
+                        <i data-lucide="hammer" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Цех зовнішньої реклами</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Зварювання металокаркасів, фрезерування композиту, спайка надійних світлодіодних модулів та професійний монтаж вивісок.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. ОСОБИСТИЙ КАБІНЕТ КЛІЄНТА (Ключова перевага Vmeste) -->
+    <section class="py-16 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7">
+                    <span class="inline-block px-3 py-1 bg-brand/20 text-brand text-xs font-bold rounded-lg border border-brand/30 mb-4">
+                        Унікальний сервіс в Одесі
+                    </span>
+                    <h2 class="text-3xl lg:text-4xl font-extrabold font-heading mb-4">
+                        Особистий кабінет клієнта <span class="text-brand">kabinet.v.od.ua</span>
+                    </h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+                        Більше не потрібно щоразу шукати старі макети по пошті або узгоджувати деталі з нуля. У нашому онлайн-кабінеті:
+                    </p>
+                    <div class="space-y-3 mb-8 text-sm">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-400 shrink-0"></i>
+                            <span><strong>Зберігання всіх ваших макетів</strong> у високій якості протягом років.</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-400 shrink-0"></i>
+                            <span><strong>Повтор будь-якого тиражу в 1 клік</strong> без зайвих дзвінків та листування.</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-400 shrink-0"></i>
+                            <span><strong>Відстеження статусу готовності:</strong> «У друку», «Готово до видачі».</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://kabinet.v.od.ua" target="_blank" class="bg-brand hover:bg-brand-hover text-white font-bold px-6 py-3.5 rounded-xl transition shadow-lg shadow-brand/30 text-sm flex items-center gap-2">
+                            <i data-lucide="log-in" class="w-4 h-4"></i>
+                            Увійти в кабінет
+                        </a>
+                        <a href="#contacts" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-6 py-3.5 rounded-xl transition border border-slate-700 text-sm">
+                            Отримати доступ для компанії
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Візуальне відображення простого інтерфейсу кабінету -->
+                <div class="lg:col-span-5 bg-slate-800 border border-slate-700 rounded-2xl p-6 shadow-2xl">
+                    <div class="flex items-center justify-between border-b border-slate-700 pb-4 mb-4">
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-8 h-8 rounded-full bg-brand flex items-center justify-center font-bold text-xs">V</div>
+                            <div>
+                                <div class="text-xs font-bold text-white">ТОВ «Одеський Бізнес»</div>
+                                <div class="text-[10px] text-slate-400">ID клієнта: #OD-4829</div>
+                            </div>
+                        </div>
+                        <span class="px-2 py-0.5 bg-emerald-500/20 text-emerald-400 text-[10px] font-bold rounded">Активний</span>
+                    </div>
+                    <div class="space-y-2.5 text-xs">
+                        <div class="p-3 bg-slate-900/80 rounded-xl border border-slate-700/60 flex items-center justify-between">
+                            <div>
+                                <div class="font-bold text-white">Візитки Soft-Touch (1000 шт)</div>
+                                <div class="text-[10px] text-slate-400">Замовлення #1048 • 450 ₴</div>
+                            </div>
+                            <span class="px-2.5 py-1 bg-emerald-500 text-slate-950 font-bold rounded text-[10px]">Готово до видачі</span>
+                        </div>
+                        <div class="p-3 bg-slate-900/80 rounded-xl border border-slate-700/60 flex items-center justify-between">
+                            <div>
+                                <div class="font-bold text-white">Світлова вивіска «Кафе» 2x0.6м</div>
+                                <div class="text-[10px] text-slate-400">Замовлення #1052 • 6 400 ₴</div>
+                            </div>
+                            <span class="px-2.5 py-1 bg-amber-400 text-slate-950 font-bold rounded text-[10px]">У виробництві</span>
+                        </div>
+                        <div class="p-3 bg-slate-900/80 rounded-xl border border-slate-700/60 flex items-center justify-between opacity-70">
+                            <div>
+                                <div class="font-bold text-white">Фірмові футболки з лого (20 шт)</div>
+                                <div class="text-[10px] text-slate-400">Макет збережено в архіві</div>
+                            </div>
+                            <button class="text-brand font-bold hover:underline text-[11px]">Повторити</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. ЗРОЗУМІЛИЙ КАЛЬКУЛЯТОР ЗАМОВЛЕННЯ -->
+    <section id="calculator" class="py-16 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="text-brand font-bold text-xs uppercase tracking-wider">Розрахунок за 1 хвилину</span>
+                <h2 class="text-3xl font-extrabold font-heading text-slate-900 mt-1">
+                    Калькулятор орієнтовної вартості
+                </h2>
+                <p class="text-slate-600 text-sm mt-2">
+                    Оберіть параметри та відправте готовий запит у месенджер для миттєвої фіксації ціни.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-card">
+                
+                <div class="grid sm:grid-cols-2 gap-6 mb-6">
+                    <!-- Категорія -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">1. Напрямок</label>
+                        <select id="calcCatSelect" onchange="onCalcCategoryChange()" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 font-medium focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20 transition">
+                            <option value="poly">Поліграфія (Візитки, Листівки, Буклети)</option>
+                            <option value="souvenirs">Сувеніри (Футболки, Чашки, Кепки, Ручки)</option>
+                            <option value="outdoor">Зовнішня реклама (Вивіски, Літери, Банери)</option>
+                            <option value="transport">Брендування транспорту</option>
+                        </select>
+                    </div>
+
+                    <!-- Виріб -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">2. Виріб / Послуга</label>
+                        <select id="calcProductSelect" onchange="calculateOrderPrice()" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 font-medium focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20 transition">
+                            <!-- Заповнюється скриптом -->
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Тираж та наявність макету -->
+                <div class="grid sm:grid-cols-2 gap-6 mb-8">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">3. Кількість / Тираж</label>
+                        <input type="number" id="calcQuantityInput" value="1000" min="1" oninput="calculateOrderPrice()" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 font-medium focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20 transition">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">4. Наявність макету</label>
+                        <div class="grid grid-cols-2 gap-3">
+                            <label class="flex items-center justify-center gap-2 p-3 bg-slate-50 border border-slate-200 rounded-xl cursor-pointer hover:bg-slate-100 transition text-xs font-bold text-slate-800">
+                                <input type="radio" name="calcDesignRadio" value="0" checked onchange="calculateOrderPrice()" class="text-brand focus:ring-brand">
+                                <span>Є готовий</span>
+                            </label>
+                            <label class="flex items-center justify-center gap-2 p-3 bg-slate-50 border border-slate-200 rounded-xl cursor-pointer hover:bg-slate-100 transition text-xs font-bold text-slate-800">
+                                <input type="radio" name="calcDesignRadio" value="350" onchange="calculateOrderPrice()" class="text-brand focus:ring-brand">
+                                <span>Потрібен дизайн</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Підсумок та відправка -->
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-6">
+                    <div>
+                        <span class="text-xs text-slate-500 font-medium block">Орієнтовна сума замовлення:</span>
+                        <div class="text-3xl font-black font-heading text-slate-900 mt-1" id="calcPriceDisplay">
+                            ~ 450 ₴
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 w-full sm:w-auto">
+                        <button onclick="sendOrderTelegram()" class="flex-1 sm:flex-none bg-sky-500 hover:bg-sky-600 text-white font-bold text-xs px-5 py-3 rounded-xl transition flex items-center justify-center gap-2 shadow-sm">
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                            У Telegram
+                        </button>
+                        <button onclick="sendOrderViber()" class="flex-1 sm:flex-none bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs px-5 py-3 rounded-xl transition flex items-center justify-center gap-2 shadow-sm">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i>
+                            У Viber
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. ВІДГУКИ КЛІЄНТІВ З ОДЕСИ -->
+    <section class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-brand font-bold text-xs uppercase tracking-wider">Довіра клієнтів</span>
+                <h2 class="text-3xl font-extrabold font-heading text-slate-900 mt-1">
+                    Відгуки підприємств Одеси
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Відгук 1 -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-3">★★★★★</div>
+                        <p class="text-slate-700 text-sm italic leading-relaxed">
+                            «Замовляємо поліграфію та меню для нашої мережі ресторанів вже 4 роки. Дуже зручно, що всі макети збережені в кабінеті — просто пишемо тираж і забираємо наступного дня. Якість на висоті!»
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-200 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand text-white font-bold flex items-center justify-center text-sm">ОК</div>
+                        <div>
+                            <div class="text-sm font-bold text-slate-900">Олена Коваленко</div>
+                            <div class="text-xs text-slate-500">ТОВ «Морська Зірка», Одеса</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Відгук 2 -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-3">★★★★★</div>
+                        <p class="text-slate-700 text-sm italic leading-relaxed">
+                            «Робили повне брендування 6 комерційних бусів для нашої служби доставки. Плівку поклеїли ідеально, без бульбашок, вже півтора року їздять по Одесі — колір яскравий і не злазить. Дякую команді "Вместе"!»
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-200 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 text-white font-bold flex items-center justify-center text-sm">МД</div>
+                        <div>
+                            <div class="text-sm font-bold text-slate-900">Максим Дорошенко</div>
+                            <div class="text-xs text-slate-500">АвтоЛайн Експрес</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Відгук 3 -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-3">★★★★★</div>
+                        <p class="text-slate-700 text-sm italic leading-relaxed">
+                            «Замовляли світлову вивіску та фірмовий мерч (худі, фартухи та чашки з лого). Зробили під ключ: розробили дизайн, узгодили розміри, виготовили та змонтували фасадну рекламу. Дуже задоволені!»
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-200 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand text-white font-bold flex items-center justify-center text-sm">ІС</div>
+                        <div>
+                            <div class="text-sm font-bold text-slate-900">Ірина Савченко</div>
+                            <div class="text-xs text-slate-500">Мережа пекарень «Крендель»</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. ПРО АГЕНЦІЮ ТА КОНТАКТИ -->
+    <section id="contacts" class="py-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Контактні дані -->
+                <div class="lg:col-span-6">
+                    <span class="text-brand font-bold text-xs uppercase tracking-wider">Зв'язок з нами</span>
+                    <h2 class="text-3xl font-extrabold font-heading text-slate-900 mt-1 mb-6">
+                        Завітайте до нас або зателефонуйте
+                    </h2>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-8">
+                        Наш офіс та виробництво знаходяться в Одесі. Ми завжди раді обговорити ваше замовлення, надати зразки матеріалів та прорахувати оптимальний бюджет.
+                    </p>
+
+                    <div class="space-y-4 text-sm">
+                        <div class="flex items-start gap-3.5 p-4 bg-white rounded-xl border border-slate-200">
+                            <i data-lucide="phone-call" class="w-5 h-5 text-brand shrink-0 mt-0.5"></i>
+                            <div>
+                                <div class="font-bold text-slate-900">Телефони для консультації:</div>
+                                <div class="text-slate-600 space-y-0.5 mt-1">
+                                    <div><a href="tel:+380487874282" class="hover:text-brand font-semibold text-slate-900">(048) 787-42-82</a> — міський багатоканальний</div>
+                                    <div><a href="tel:+380687171997" class="hover:text-brand">(068) 717-19-97</a> — Kyivstar (Telegram)</div>
+                                    <div><a href="tel:+380634531234" class="hover:text-brand">(063) 453-12-34</a> — lifecell (Viber)</div>
+                                    <div><a href="tel:+380663977030" class="hover:text-brand">(066) 397-70-30</a> — Vodafone</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5 p-4 bg-white rounded-xl border border-slate-200">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-brand shrink-0 mt-0.5"></i>
+                            <div>
+                                <div class="font-bold text-slate-900">Адреса та графік:</div>
+                                <div class="text-slate-600 mt-1">
+                                    м. Одеса, Україна<br>
+                                    <strong>Пн–Пт:</strong> 10:00 – 16:00 | <strong>Сб–Нд:</strong> вихідні
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5 p-4 bg-white rounded-xl border border-slate-200">
+                            <i data-lucide="mail" class="w-5 h-5 text-brand shrink-0 mt-0.5"></i>
+                            <div>
+                                <div class="font-bold text-slate-900">Електронна пошта для макетів:</div>
+                                <a href="mailto:vmeste.reklama@gmail.com" class="text-brand font-semibold hover:underline mt-1 block">
+                                    vmeste.reklama@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Форма зворотного зв'язку -->
+                <div class="lg:col-span-6 bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-card">
+                    <h3 class="text-xl font-bold font-heading text-slate-900 mb-2">Швидкий запит на прорахунок</h3>
+                    <p class="text-xs text-slate-500 mb-6">Залиште свій номер, і менеджер зв'яжеться з вами протягом 15 хвилин.</p>
+
+                    <form id="leadContactForm" onsubmit="handleLeadSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-1">Ваше ім'я</label>
+                            <input type="text" id="leadName" required placeholder="Олександр" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-1">Номер телефону</label>
+                            <input type="tel" id="leadPhone" required placeholder="+38 (0__) ___-__-__" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-1">Що саме потрібно виготовити?</label>
+                            <textarea id="leadComment" rows="3" placeholder="Наприклад: 1000 візиток та 10 фірмових футболок із логотипом..." class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20 transition resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand hover:bg-brand-hover text-white font-bold py-3.5 rounded-xl transition shadow-lg shadow-brand/25 text-sm flex items-center justify-center gap-2">
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                            Отримати точний розрахунок за 15 хв
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. ПІДВАЛ САЙТУ (FOOTER) -->
+    <footer class="bg-slate-900 text-slate-400 text-xs pt-12 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 pb-8 border-b border-slate-800">
+                
+                <div class="col-span-2 md:col-span-1">
+                    <img src="img/logo.png" alt="РА Вместе" class="h-9 w-auto mb-4" onerror="this.style.display='none';">
+                    <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                        Рекламна агенція повного циклу з власним виробництвом в Одесі. 15 років бездоганної роботи.
+                    </p>
+                    <a href="https://kabinet.v.od.ua" target="_blank" class="text-amber-400 font-bold hover:underline flex items-center gap-1">
+                        <i data-lucide="user" class="w-3.5 h-3.5"></i> Вхід для клієнтів
+                    </a>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white mb-3 uppercase tracking-wider text-[11px]">Послуги</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="hover:text-white transition">Оперативна поліграфія</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Сувенірна продукція та мерч</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Світлові вивіски та неон</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Брендування автомобілів</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Дизайн та верстка макетів</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white mb-3 uppercase tracking-wider text-[11px]">Виробництво</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#production" class="hover:text-white transition">УФ-друк прямого нанесення</a></li>
+                        <li><a href="#production" class="hover:text-white transition">Лазерна порізка та гравіювання</a></li>
+                        <li><a href="#production" class="hover:text-white transition">Шовкотрафаретний друк</a></li>
+                        <li><a href="#production" class="hover:text-white transition">Збирання та монтаж вивісок</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white mb-3 uppercase tracking-wider text-[11px]">Зв'язок</h4>
+                    <ul class="space-y-2">
+                        <li><a href="tel:+380487874282" class="text-white font-bold hover:text-brand">(048) 787-42-82</a></li>
+                        <li><a href="https://t.me/Vmeste_ra" class="hover:text-sky-400 flex items-center gap-1.5"><i data-lucide="send" class="w-3.5 h-3.5"></i> Telegram: @Vmeste_ra</a></li>
+                        <li><a href="viber://chat?number=%2B380634531234" class="hover:text-purple-400 flex items-center gap-1.5"><i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Viber: (063) 453-12-34</a></li>
+                        <li><span>м. Одеса, Пн–Пт 10:00–16:00</span></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-slate-500 text-[11px]">
+                <div>© 2011–2026 Рекламна агенція «Вместе» (v.od.ua). Всі права захищено.</div>
+                <div>Пропозиція оновлення сайту від WebDev Studio</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 11. МОБІЛЬНА ЗАКРІПЛЕНА ПАНЕЛЬ (FLOATING BOTTOM BAR ДЛЯ СМАРТФОНІВ) -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-slate-200 p-2.5 z-40 lg:hidden flex gap-2 shadow-2xl">
+        <a href="tel:+380487874282" class="flex-1 bg-slate-900 text-white font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2 active:scale-95 transition">
+            <i data-lucide="phone" class="w-4 h-4 text-brand"></i>
+            Дзвінок
+        </a>
+        <a href="https://t.me/Vmeste_ra" target="_blank" class="flex-1 bg-sky-500 text-white font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2 active:scale-95 transition">
+            <i data-lucide="send" class="w-4 h-4"></i>
+            Telegram
+        </a>
+        <a href="#calculator" class="bg-brand text-white font-bold text-xs px-4 py-3 rounded-xl flex items-center justify-center gap-1 active:scale-95 transition">
+            <i data-lucide="calculator" class="w-4 h-4"></i>
+        </a>
+    </div>
+
+    <!-- 12. Спливаюче сповіщення (Toast) -->
+    <div id="toastNotification" class="fixed bottom-20 sm:bottom-6 right-6 bg-slate-900 text-white px-5 py-3.5 rounded-xl shadow-2xl flex items-center gap-3 transform translate-y-24 opacity-0 transition-all duration-300 z-50 pointer-events-none">
+        <div class="w-7 h-7 rounded-full bg-emerald-500 text-slate-950 flex items-center justify-center font-bold text-xs">✓</div>
+        <div class="text-xs font-semibold" id="toastMessage">Запит успішно відправлено! Менеджер зв'яжеться з вами.</div>
+    </div>
+
+    <!-- 13. JAVASCRIPT ЛОГІКА (Зрозуміла, без збоїв) -->
+    <script>
+        // Ініціалізація іконок
+        lucide.createIcons();
+
+        // Перемикання мобільного меню
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('hidden');
+        }
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+
+        // Фільтрація карток за категоріями
+        function filterCategory(category) {
+            const buttons = document.querySelectorAll('.cat-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-brand', 'text-white');
+                btn.classList.add('bg-white', 'text-slate-700');
+            });
+            event.currentTarget.classList.remove('bg-white', 'text-slate-700');
+            event.currentTarget.classList.add('bg-brand', 'text-white');
+
+            const cards = document.querySelectorAll('.product-card');
+            let visibleCount = 0;
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            document.getElementById('noResultsBlock').classList.toggle('hidden', visibleCount > 0);
+        }
+
+        // Живий пошук по товарах
+        const searchInput = document.getElementById('liveSearchInput');
+        searchInput.addEventListener('input', function(e) {
+            const query = e.target.value.toLowerCase().trim();
+            const cards = document.querySelectorAll('.product-card');
+            let found = 0;
+
+            cards.forEach(card => {
+                const title = card.dataset.title.toLowerCase();
+                if (title.includes(query)) {
+                    card.style.display = 'flex';
+                    found++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            document.getElementById('noResultsBlock').classList.toggle('hidden', found > 0);
+        });
+
+        // Дані для простого калькулятора
+        const calcData = {
+            poly: [
+                { name: 'Візитки стандарт (1000 шт)', unitPrice: 0.45, defaultQty: 1000 },
+                { name: 'Візитки Soft-Touch (1000 шт)', unitPrice: 0.85, defaultQty: 1000 },
+                { name: 'Листівки А5 (1000 шт)', unitPrice: 0.75, defaultQty: 1000 },
+                { name: 'Буклети євро 2 згини (500 шт)', unitPrice: 2.4, defaultQty: 500 },
+                { name: 'Наклейки контурні (100 шт)', unitPrice: 3.0, defaultQty: 100 }
+            ],
+            souvenirs: [
+                { name: 'Футболки з принтом (від 5 шт)', unitPrice: 280, defaultQty: 10 },
+                { name: 'Чашки білі з логотипом (від 10 шт)', unitPrice: 120, defaultQty: 20 },
+                { name: 'Кепки з вишивкою (від 10 шт)', unitPrice: 190, defaultQty: 15 },
+                { name: 'Ручки пластикові з друком (від 50 шт)', unitPrice: 18, defaultQty: 100 }
+            ],
+            outdoor: [
+                { name: 'Світловий короб / Лайтбокс 1x1м', unitPrice: 2800, defaultQty: 1 },
+                { name: 'Об\'ємні світлові літери (за 1 см висоти)', unitPrice: 45, defaultQty: 100 },
+                { name: 'Банер друк 440г з люверсами (м²)', unitPrice: 220, defaultQty: 6 }
+            ],
+            transport: [
+                { name: 'Брендування легкового авто (часткове)', unitPrice: 1800, defaultQty: 1 },
+                { name: 'Брендування мікроавтобуса (2 борти)', unitPrice: 4500, defaultQty: 1 }
+            ]
+        };
+
+        function onCalcCategoryChange() {
+            const cat = document.getElementById('calcCatSelect').value;
+            const prodSelect = document.getElementById('calcProductSelect');
+            prodSelect.innerHTML = '';
+
+            if (calcData[cat]) {
+                calcData[cat].forEach((item, index) => {
+                    const opt = document.createElement('option');
+                    opt.value = item.unitPrice;
+                    opt.textContent = item.name;
+                    opt.dataset.defaultQty = item.defaultQty;
+                    prodSelect.appendChild(opt);
+                });
+                document.getElementById('calcQuantityInput').value = calcData[cat][0].defaultQty;
+            }
+            calculateOrderPrice();
+        }
+
+        function calculateOrderPrice() {
+            const prodSelect = document.getElementById('calcProductSelect');
+            const unitPrice = parseFloat(prodSelect.value) || 0.45;
+            const qty = parseInt(document.getElementById('calcQuantityInput').value) || 1;
+            const designPrice = parseInt(document.querySelector('input[name="calcDesignRadio"]:checked')?.value || 0);
+
+            const total = Math.round(unitPrice * qty + designPrice);
+            document.getElementById('calcPriceDisplay').textContent = '~ ' + total.toLocaleString('uk-UA') + ' ₴';
+        }
+
+        function getOrderSummary() {
+            const catName = document.getElementById('calcCatSelect').selectedOptions[0].text;
+            const prodName = document.getElementById('calcProductSelect').selectedOptions[0].text;
+            const qty = document.getElementById('calcQuantityInput').value;
+            const design = document.querySelector('input[name="calcDesignRadio"]:checked').value === '0' ? 'Є готовий макет' : 'Потрібен дизайн';
+            const price = document.getElementById('calcPriceDisplay').textContent;
+
+            return encodeURIComponent(
+                `Доброго дня, РА «Вместе»! Цікавить прорахунок:\n` +
+                `• Категорія: ${catName}\n` +
+                `• Виріб: ${prodName}\n` +
+                `• Кількість: ${qty} шт\n` +
+                `• Макет: ${design}\n` +
+                `• Орієнтовна вартість: ${price}\n\n` +
+                `Підкажіть, будь ласка, точні терміни виготовлення.`
+            );
+        }
+
+        function sendOrderTelegram() {
+            window.open(`https://t.me/Vmeste_ra?text=${getOrderSummary()}`, '_blank');
+        }
+
+        function sendOrderViber() {
+            window.open(`viber://chat?number=%2B380634531234`, '_blank');
+        }
+
+        function openQuickOrder(productName) {
+            document.getElementById('leadComment').value = `Цікавить замовлення: ${productName}. Прошу зробити прорахунок.`;
+            document.getElementById('contacts').scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('leadPhone').focus();
+        }
+
+        // Обробка контактної форми (Показ Toast)
+        function handleLeadSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('leadName').value;
+            showToast(`Дякуємо, ${name}! Запит прийнято. Менеджер зв'яжеться з вами за 15 хв.`);
+            document.getElementById('leadContactForm').reset();
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toastNotification');
+            document.getElementById('toastMessage').textContent = message;
+            toast.classList.remove('translate-y-24', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-24', 'opacity-0');
+            }, 4000);
+        }
+
+        // Початкова ініціалізація калькулятора
+        onCalcCategoryChange();
+    </script>
+</body>
+</html>
